@@ -1,0 +1,27 @@
+# Competitions
+
+alias kick='cd ~/Documentos/Training-for-Programming-Competitions/2021/KickStart'
+alias neps='cd ~/Documentos/Training-for-Programming-Competitions/2021/Neps'
+alias codejam='cd ~/Documentos/Training-for-Programming-Competitions/2021/Codejam'
+alias cj='codejam'
+alias codeforces='cd ~/Documentos/Training-for-Programming-Competitions/2021/Codeforces'
+alias cf='codeforces'
+alias colas='cd ~/Documentos/Training-for-Programming-Competitions/Algorithms\,\ Data\ Strututes\ and\ Others/'
+
+alias faz='~/Documentos/Training-for-Programming-Competitions/Scripts/do.sh'
+alias copia='~/Documentos/Training-for-Programming-Competitions/Scripts/copy.sh'
+alias qnts='~/Documentos/Training-for-Programming-Competitions/Scripts/how_much.sh'
+
+# Internship
+
+alias intern='cd ~/Documentos/Interview-Training'
+alias facebook='cd ~/Documentos/Interview-Training/Companies/Facebook'
+alias fb='facebook'
+alias amazon='cd ~/Documentos/Interview-Training/Companies/Amazon'
+
+# Useful
+
+#alias rm='rm -i'
+alias ls='ls --color=auto' #-lahs --color=auto'
+alias free='free -h'
+alias edit_alias='vim ~/.bash_aliases && source ~/.bash_aliases'
