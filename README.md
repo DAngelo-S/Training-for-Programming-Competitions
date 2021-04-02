@@ -82,7 +82,7 @@ Next, my to-do lists.
     
 ### Exercises
 
-- [350/278] Exercises
+- [352/278] Exercises
 
 ## Code Jam
 
