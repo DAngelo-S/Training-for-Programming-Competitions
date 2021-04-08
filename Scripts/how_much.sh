@@ -17,9 +17,13 @@ for arq in $(ls "/home/deborass/Documentos/Training-for-Programming-Competitions
 	let "contador=contador+1"
 done
 
+for arq in $(ls "/home/deborass/Documentos/Training-for-Programming-Competitions/$ano/URI"); do
+	let "contador=contador+1"
+done
+
 echo "Já fizemos pelo menos" $contador "exercícios neste ano"
 
-ini=$(date +%s --date="2021-03-29")
+ini=$(date +%s --date="2021-04-08")
 hj=$(date +%s)
 
 let "aux1=hj-ini"
