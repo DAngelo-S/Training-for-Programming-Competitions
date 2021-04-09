@@ -45,6 +45,7 @@ Next, my to-do lists.
 - [ ] Basic Data Structures
 - [ ] Basic Web Scraping
 - [ ] Basic Programming Techniques
+- [ ] Introduction to Computational Graphs
 - [x] Programação Básica (CodCad)
 - [ ] Estruturas de Dados (CodCad)
 - [ ] Técnicas de Programação (CodCad)
