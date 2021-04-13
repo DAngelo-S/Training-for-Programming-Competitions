@@ -35,7 +35,7 @@ Next, my to-do lists.
 
 ### Courses
 
-- [ ] Computer 101
+- [x] Computer 101
 - [ ] Introduction to Programming
 - [ ] Dynamic Allocation and Files Manipulation
 - [ ] Object Oriented Programming
@@ -53,7 +53,7 @@ Next, my to-do lists.
  
 ### Tutoria - Tutoring, in Portuguese
 - [x] 05/03/2021 Apresentação da Tutoria
-- [ ] 12/03/2021 Complexidade de Algoritmos
+- [x] 12/03/2021 Complexidade de Algoritmos
 - [ ] 19/03/2021 Busca em Profundidade (DFS) e Busca em Largura (BFS)
 - [ ] 26/03/2021 Aplicações de DFS e BFS (I)
 - [ ] 02/04/2021 Programação Dinâmica (I)
@@ -82,7 +82,7 @@ Next, my to-do lists.
     
 ### Exercises
 
-- [352/278] Exercises
+- [353/278] Exercises
 
 ## Code Jam
 
@@ -827,6 +827,7 @@ Next, my to-do lists.
 
 # Achievements 2021
 
+i [x] (Apr) I was invited for the last step of the Facebook Internship Selective Process;
 - [x] (Mar) Managed to form a study group for marathon <3;
 - [x] (Mar) Was invited to participe of the selection process for interns at Facebook - London;
 - [x] (Mar) Passed for the tecnical interview at the IBM - US;
