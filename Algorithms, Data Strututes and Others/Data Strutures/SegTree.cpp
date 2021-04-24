@@ -1,3 +1,5 @@
+// https://cp-algorithms.com/data_structures/segment_tree.html
+
 #include<bits/stdc++.h>
 
 using namespace std;
@@ -49,6 +51,8 @@ int main () {
 	cin >> N;
 
 	v.resize(N);
+	segtree.resize(4*N+1);
+
 	for(int i = 0; i < N; i++)
 		cin >> v[i];
 
