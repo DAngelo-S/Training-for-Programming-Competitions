@@ -23,7 +23,7 @@ done
 
 echo "Já fizemos pelo menos" $contador "exercícios neste ano"
 
-ini=$(date +%s --date="2021-04-08")
+ini=$(date +%s --date="2021-11-08")
 hj=$(date +%s)
 
 let "aux1=hj-ini"
