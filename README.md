@@ -828,7 +828,8 @@ Next, my to-do lists.
 
 # Achievements 2021
 
-i [x] (Apr) I was invited for the last step of the Facebook Internship Selective Process;
+- [x] (Out) I've recived an offer for an internship at Amazon SP;
+- [x] (Apr) I was invited for the last step of the Facebook Internship Selective Process;
 - [x] (Mar) Managed to form a study group for marathon <3;
 - [x] (Mar) Was invited to participe of the selection process for interns at Facebook - London;
 - [x] (Mar) Passed for the tecnical interview at the IBM - US;
