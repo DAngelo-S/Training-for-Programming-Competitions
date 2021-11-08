@@ -1,0 +1,11 @@
+getchar_unlocked() é mais rapido que getchar() que é mais
+rapido do que scanf() que é mais rapido do que cin
+porem getchar_unlocked() nao funciona em todos os sistemas. Cuidado!
+
+Script pra deixar mais rápido e prático a criação de novos codigos <3
+
+     faz.sh
+ 
+     cp ../../Modelo.cpp ./$1.cpp
+     vim $1.cpp
+ 
