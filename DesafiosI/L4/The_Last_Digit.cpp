@@ -10,30 +10,23 @@ int main () {
 ios_base::sync_with_stdio(false);
 cin.tie(NULL);
 
-int n, m, tmp, mx, mh;
-cin >> n;
+long long t, a, b, r, bb;
+vector<int> v;
 
-while(n) {
-
-n--;
-
-cin >> m;
-
-mx = mh = 0;
-
-for (int i = 0; i < m; i++) {
-cin >> tmp;
-mh += tmp;
-if (mx < mh) {
-mx = mh;
-}
-if (mh < 0) {
-mh = 0;
+cin >> t;
+while(t--) {
+cin >> a >> b;
+r = 1;
+while (b--) {
+r = (r*a) % 10;
+if (v.size() > 0 && v[0] == r) {
+b = b % v.size(); // (b-m) % m == b % m
+} else {
+v.push_back(r);
 }
 }
-
-cout << mx << endl;
-
+cout << r << endl;
+v.clear();
 }
 
 return 0;

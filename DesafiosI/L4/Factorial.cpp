@@ -10,30 +10,17 @@ int main () {
 ios_base::sync_with_stdio(false);
 cin.tie(NULL);
 
-int n, m, tmp, mx, mh;
+long long count5, t, n;
+
+cin >> t;
+
+while (t--) {
+count5 = 0;
 cin >> n;
-
-while(n) {
-
-n--;
-
-cin >> m;
-
-mx = mh = 0;
-
-for (int i = 0; i < m; i++) {
-cin >> tmp;
-mh += tmp;
-if (mx < mh) {
-mx = mh;
+for (long long i = 5; i <= n; i*=5) {
+count5 += n / i;
 }
-if (mh < 0) {
-mh = 0;
-}
-}
-
-cout << mx << endl;
-
+cout << count5 << endl;
 }
 
 return 0;

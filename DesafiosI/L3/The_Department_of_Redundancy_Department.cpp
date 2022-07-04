@@ -10,30 +10,21 @@ int main () {
 ios_base::sync_with_stdio(false);
 cin.tie(NULL);
 
-int n, m, tmp, mx, mh;
-cin >> n;
+vector< pair<int, int> > v;
+int n, aux=0;
+map<int, int> m;
 
-while(n) {
-
-n--;
-
-cin >> m;
-
-mx = mh = 0;
-
-for (int i = 0; i < m; i++) {
-cin >> tmp;
-mh += tmp;
-if (mx < mh) {
-mx = mh;
-}
-if (mh < 0) {
-mh = 0;
+while(cin >> n) {
+if (m.find(n) == m.end()) {
+m[n] = aux++;
+v.push_back(make_pair(n, 1));
+} else {
+v[m[n]].second++;
 }
 }
 
-cout << mx << endl;
-
+for (auto i : v) {
+cout << i.first << " " << i.second << endl; 
 }
 
 return 0;

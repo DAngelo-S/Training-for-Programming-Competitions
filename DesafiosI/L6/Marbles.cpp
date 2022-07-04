@@ -6,34 +6,28 @@ using namespace std;
 #define RESET(a, b) memset(a, b, sizeof(a))
 #define SORT(v) sort(v.begin(), v.end())
 
+long long bin(long long n, long long k) {
+k = max(k, n-k);
+long long resp = 1;
+
+for (int i = 0; i < k; i++) {
+resp = resp * (n-i) / (i+1);
+}
+
+return resp;
+}
+
 int main () {
 ios_base::sync_with_stdio(false);
 cin.tie(NULL);
 
-int n, m, tmp, mx, mh;
-cin >> n;
+long long T, N, K;
 
-while(n) {
+cin >> T;
 
-n--;
-
-cin >> m;
-
-mx = mh = 0;
-
-for (int i = 0; i < m; i++) {
-cin >> tmp;
-mh += tmp;
-if (mx < mh) {
-mx = mh;
-}
-if (mh < 0) {
-mh = 0;
-}
-}
-
-cout << mx << endl;
-
+while (T--) {
+cin >> N >> K;
+cout << bin(N, K) << endl;
 }
 
 return 0;

@@ -10,23 +10,33 @@ int main () {
 ios_base::sync_with_stdio(false);
 cin.tie(NULL);
 
-int t, l, n, tmp, NMAX=0, NMIN=0, m;
+stack<int> q;
+int t, n, ant, a;
 
 cin >> t;
 
 while(t--) {
-cin >> l >> n;
-NMAX = NMIN = 0;
+cin >> n;
+ant = 0;
 while (n--) {
-cin >> tmp;
-m = (l - tmp > tmp ? l - tmp : tmp);
-if (NMAX < m)
-NMAX = m;
-m = (l - tmp < tmp ? l - tmp : tmp);
-if (NMIN < m)
-NMIN = m;
+cin >> a;
+if (a != ant + 1) {
+q.push(a);
+} else {
+ant++;
 }
-cout << NMIN << " " << NMAX << endl;
+
+while(!q.empty() && q.top() == ant + 1) {
+ant++;
+q.pop();
+}
+}
+
+cout << (q.empty() ? "yes" : "no") << endl;
+
+while(!q.empty()) {
+       q.pop();
+}       
 }
 
 return 0;

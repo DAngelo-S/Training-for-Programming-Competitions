@@ -7,25 +7,25 @@ using namespace std;
 #define SORT(v) sort(v.begin(), v.end())
 
 int main () {
-	ios_base::sync_with_stdio(false);
-	cin.tie(NULL);
+ios_base::sync_with_stdio(false);
+cin.tie(NULL);
 
-	int n, m, t = 0;
-	cin >> n >> m;
+int n, m, t = 0;
+cin >> n >> m;
 
-	while ((n >= 1 && m >= 2) || (n >= 2 && m >= 1)) {
-		if (n > m) {
-			n -= 2;
-			m -= 1;
-			t++;
-		} else {
-			n -= 1;
-			m -= 2;
-			t++;
-		}
-	}
+while ((n >= 1 && m >= 2) || (n >= 2 && m >= 1)) {
+if (n > m) {
+n -= 2;
+m -= 1;
+t++;
+} else {
+n -= 1;
+m -= 2;
+t++;
+}
+}
 
-	cout << t << endl;
+cout << t << endl;
 
-	return 0;
+return 0;
 }

@@ -7,18 +7,18 @@ using namespace std;
 #define SORT(v) sort(v.begin(), v.end())
 
 int main () {
-	ios_base::sync_with_stdio(false);
-	cin.tie(NULL);
+ios_base::sync_with_stdio(false);
+cin.tie(NULL);
 
-	int n, a, b;
+int n, a, b;
 
-	cin >> n;
+cin >> n;
 
-	while (n) {
-		n--;
-		cin >> a >> b;
-		cout << a + b << endl;
-	}
+while (n) {
+n--;
+cin >> a >> b;
+cout << a + b << endl;
+}
 
-	return 0;
+return 0;
 }

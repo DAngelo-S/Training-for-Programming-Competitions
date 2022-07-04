@@ -10,31 +10,21 @@ int main () {
 ios_base::sync_with_stdio(false);
 cin.tie(NULL);
 
-int n, m, tmp, mx, mh;
-cin >> n;
+string s;
+int n = 0;
 
-while(n) {
+cin >> s;
 
-n--;
-
-cin >> m;
-
-mx = mh = 0;
-
-for (int i = 0; i < m; i++) {
-cin >> tmp;
-mh += tmp;
-if (mx < mh) {
-mx = mh;
-}
-if (mh < 0) {
-mh = 0;
-}
+for (auto c : s) {
+if (c == '4' || c=='7')
+n++;
 }
 
-cout << mx << endl;
-
-}
+if (n == 4 || n == 7)
+cout << "YES";
+else
+cout << "NO";
+cout << endl;
 
 return 0;
 }

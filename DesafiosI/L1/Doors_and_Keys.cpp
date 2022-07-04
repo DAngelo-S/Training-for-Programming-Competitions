@@ -7,46 +7,46 @@ using namespace std;
 #define SORT(v) sort(v.begin(), v.end())
 
 bool canPass (string s) {
-	int g=0, b=0, r=0;
+int g=0, b=0, r=0;
 
-	for (auto c : s) {
-		if (c == 'r')
-			r++;
-		else if (c == 'g')
-    			g++;
-		else if (c == 'b')
-			b++;
-		else if (c == 'R') {
-			r--;
-			if (r < 0)
-				return false;
-		} else if (c == 'B') {
-			b--;
-			if (b < 0)
-				return false;
-		} else if (c == 'G') {
-			g--;
-			if (g < 0)
-				return false;
-		}
-	}
-	return true;
+for (auto c : s) {
+if (c == 'r')
+r++;
+else if (c == 'g')
+    g++;
+else if (c == 'b')
+b++;
+else if (c == 'R') {
+r--;
+if (r < 0)
+return false;
+} else if (c == 'B') {
+b--;
+if (b < 0)
+return false;
+} else if (c == 'G') {
+g--;
+if (g < 0)
+return false;
+}
+}
+return true;
 }
 
 int main () {
-	ios_base::sync_with_stdio(false);
-	cin.tie(NULL);
+ios_base::sync_with_stdio(false);
+cin.tie(NULL);
 
-	int n;
-	string s;
+int n;
+string s;
 
-	cin >> n;
+cin >> n;
 
-	while(n) {
-		n--;
-		cin >> s;
-		cout << (canPass(s) ? "YES" : "NO") << endl;
-	}	
+while(n) {
+n--;
+cin >> s;
+cout << (canPass(s) ? "YES" : "NO") << endl;
+}
 
-	return 0;
+return 0;
 }

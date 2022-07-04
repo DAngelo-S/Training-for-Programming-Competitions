@@ -10,31 +10,23 @@ int main () {
 ios_base::sync_with_stdio(false);
 cin.tie(NULL);
 
-int n, m, tmp, mx, mh;
-cin >> n;
+int n, k, cnt=0;
+cin >> n >> k;
+int v[n];
+map<int, int> m;
 
-while(n) {
-
-n--;
-
-cin >> m;
-
-mx = mh = 0;
-
-for (int i = 0; i < m; i++) {
-cin >> tmp;
-mh += tmp;
-if (mx < mh) {
-mx = mh;
+for (int i = 0; i < n; i++) {
+cin >> v[i];
+m[v[i]] = i;
 }
-if (mh < 0) {
-mh = 0;
+
+for (int i = 0; i < n; i++) {
+if (m.find(v[i] - k) != m.end()) {
+cnt++;
 }
 }
 
-cout << mx << endl;
-
-}
+cout << cnt << endl;
 
 return 0;
 }

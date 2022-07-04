@@ -10,30 +10,19 @@ int main () {
 ios_base::sync_with_stdio(false);
 cin.tie(NULL);
 
-int n, m, tmp, mx, mh;
-cin >> n;
+long long m, n, s, r=0, p;
+cin >> m >> n;
 
-while(n) {
-
-n--;
-
-cin >> m;
-
-mx = mh = 0;
-
-for (int i = 0; i < m; i++) {
-cin >> tmp;
-mh += tmp;
-if (mx < mh) {
-mx = mh;
+while (m>=n) {
+s = n;
+p = 1;
+while (s<<1 <= m) {
+s<<=1;
+p<<=1;
+cout << s << " " << p << " " << m << endl;
 }
-if (mh < 0) {
-mh = 0;
-}
-}
-
-cout << mx << endl;
-
+r+=p;
+m-=s;
 }
 
 return 0;
